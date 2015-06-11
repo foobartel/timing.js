@@ -1,6 +1,6 @@
 /**
- * Timing.js 1.0.3
- * Copyright 2014 Addy Osmani
+ * Timing.js 1.0.4
+ * Copyright 2015 Addy Osmani
  */
 (function(window) {
     'use strict';
@@ -97,7 +97,7 @@
          */
         printTable: function(opts) {
             var table = {};
-            var data  = this.getTimes(opts);
+            var data  = this.getTimes(opts) || {};
             Object.keys(data).sort().forEach(function(k) {
                 table[k] = {
                     ms: data[k],
